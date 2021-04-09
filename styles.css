@@ -95,7 +95,7 @@ section {
 
 #reset {
     padding: 10px;
-    margin: 20px;
+    margin: 20px; 
     font-size: 10px;
     border: 1px solid #fae428;
 	color: #fae428;
@@ -112,7 +112,7 @@ section {
     color: #00476A;
     border-width: 5px;
     background-color: white;
-    transition: border-color 0.5s ease-in;  
+    transition: border-color 0.5s ease-in; 
 }
 
 input {

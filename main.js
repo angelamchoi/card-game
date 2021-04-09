@@ -21,25 +21,23 @@ let cardCheck = 0;
 let scoreMultiplier = 1;
 let emptyArray = [];
 let correctCards = 0;
+let num1 = '';
+let num2 = '';
+let ans = '';
 
 // CACHED ELEMENT REFERENCES
 const cards = document.querySelectorAll('.bound');
 const btn = document.querySelector('#reset');
+const cardFront =  document.querySelectorAll(".front");
 let scoreBoard = document.querySelector(".score");
 let math = document.querySelectorAll(".mathProblems");
 let question = document.querySelector('#question');
-const cardFront =  document.querySelectorAll(".front");
 let answer = document.getElementById('answer');
-let num1 = '';
-let num2 = '';
-let ans = '';
 
 // EVENT LISTENERS
 btn.addEventListener('click', init);
 cards.forEach(cards => cards.addEventListener('click', flip));
 answer.addEventListener('keyup',checkKeyEvt);
-
-
 
 // shuffle array part 1
 let arrayShuffle = function(arr) {
@@ -65,6 +63,7 @@ function shuffled() {
     emptyArray[h] = newArray[h];
     h++;
   });
+  
 }
 
 shuffled();
@@ -104,6 +103,7 @@ function checkMatch(){
     cardCheck = 0;
     correctCards++;
     scoreBoard.innerHTML = scoreMultiplier++;
+    secondCardImg.removeEventListener("click", flip);
     mathProblems();
 }
 
@@ -149,15 +149,22 @@ function winningMsg(){
     alert("Yay!")
 }
 
+function cardReset () {
+  for (let i = 0; i < cards.length; i++) {
+    cards[i].style.transform = "rotate(0deg)"
+  }
+  firstCardImg.addEventListener("click", flip);
+  secondCardImg.addEventListener("click", flip);
+}
+
 function init () {
   matchedCards = false;
   setTimeout(shuffled, 2000);
-  firstCardImg.style.transform = "rotateY(0deg)";
-  secondCardImg.style.transform = "rotateY(0deg)";
+  //firstCardImg.style.transform = "rotateY(0deg)";
+  //secondCardImg.style.transform = "rotateY(0deg)";
+  cardReset();
   cardCheck = 0;
   scoreBoard.innerHTML = 0;
+  firstCardImg = undefined;
+  secondCardImg = undefined;
 }
-
-
-
-
