@@ -139,13 +139,12 @@ function checkAnswer() {
     console.log("correctCards", correctCards);
      if (correctCards === 6) {
       winningMsg();
+     }
     answer.style.visibility = "hidden";
     question.style.visibility = "hidden";
   }
 }
 
-//winning message
-//all cards are flipped 
 function winningMsg(){
     alert("Yay!")
 }
