@@ -71,7 +71,6 @@ After creating a mockup, I began to pseudocode. The following is pseudocode that
 	- matched! 
 		- update match property to true that way the card will always be flipped
 
-
 **Start Game/Reset Game**
 - display timer
 - display score = 0
