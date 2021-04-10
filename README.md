@@ -1,6 +1,6 @@
 # 🃏Matching Card Game - General Assembly - SEI Project 1
 
-Matching card game is a browser based version with a multiplication twist. This browser based game was created for General Assembly's Software Engineering Immersive (SEI) Program.
+Matching card game is a browser based game with a multiplication twist. This browser based game was created for General Assembly's Software Engineering Immersive (SEI) Program.
 
 ## 💡Inspiration for the game
 As a former math teacher, I wanted to build an engaging and purposeful game to inspire students to practice their multiplication facts while having fun. 
@@ -12,18 +12,19 @@ The matching card game uses HTML, CSS and Javascript.
 To play, access the browser based game here: 
 (https://angelamchoi.github.io/card-game/)
 
-Match the correct cards before the time runs out. When there is a correct match, the user will solve a multiplication problem and will receive extra points. Enjoy your daily dose of math :)
+Match the same cards. When there is a correct match, the user will solve a multiplication problem and will receive extra points. Enjoy your daily dose of math😀
 
 Good luck!
 
-## Next Steps 
+## 📓Next Steps 
 The follow are the next steps in improving the matching card game:
 
 - Allow players to save their progress when they return back to their game
 - Include different levels such as medium and difficult
 - Make it mobile responsive
+- Include various math operations (add, sub, multi, divide) and allow users to choose which operation they want to play 
 	
-## Development Process
+## 🛠️⚙️Development Process
 The browser based game was developed, this section will cover the following topics:
 
 1. Project Requirements
@@ -57,14 +58,15 @@ Before diving into coding the game, I created a mockup for the browser based gam
 ![image](wireframe_pics/pic_3.png)
 
 
+
 ### 3. Pseudocode
 After creating my mockup, I began to pseudocode. The following is pseudocode that was written before building the game. Pseudocode allowed me to think through each step of building my game and think deeply how on how the user will be interacting with the game. It also reminded me of lesson planning when I was a teacher and thinking through from introducing to lesson to incorporating independent practice time for students. I followed this template to aid me in structuring an organized process.
 
 **Data Structure**
 - Card images  
 	- create an array of images
-	- when you click image url path shows
-- player choice
+	- identify same card by image url path 
+- Player choice
 
 **Variables**
 - time
@@ -169,9 +171,12 @@ Reflection
 
 
 Difficulties Faced
+The following are some challenges I encountered:
+
 - Positioning Random Pictures
 	- This part was challenging for me.
 	- I used Fisher Yates Algorithm to help me randomly position my cards. Although it was challenging. I love this algorithm!
+- Locating 
 - Start small and then scale up
 	- I learned that I need to start small with 4 cards and make it work.
 

@@ -136,7 +136,6 @@ function checkAnswer() {
   ans = parseInt(answer.value);
   if (ans === num1 * num2) {
     scoreBoard.innerHTML = scoreMultiplier++;
-    console.log("correctCards", correctCards);
      if (correctCards === 6) {
       winningMsg();
      }
