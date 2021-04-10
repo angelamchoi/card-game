@@ -145,8 +145,11 @@ function checkAnswer() {
   }
 }
 
-function winningMsg(){
-    alert("Yay!")
+function winningMsg() {
+  scoreBoard.innerHTML= "YAY!!! YOU WIN!!";
+  scoreBoard.style.color = "yellow";
+  scoreBoard.style.fontSize = "100px";
+  overlay.style.display = "block";
 }
 
 function cardReset () {
