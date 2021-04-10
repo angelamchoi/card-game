@@ -4,9 +4,6 @@ Matching card game is a browser based game with a multiplication twist. This bro
 
 ![image](wireframe_pics/pic_7.png)
 
-![image](wireframe_pics/pic_9.png)
-
-
 
 ## 💡Inspiration for the game
 As a former math teacher, I wanted to build an engaging and purposeful game to inspire students to practice their multiplication facts while having fun. 
@@ -17,8 +14,7 @@ To play, access the browser based game here:
 
 Match the same cards. When there is a correct match, the user will solve a multiplication problem and will receive extra points. Enjoy your daily dose of math😀
 
-
-![image](wireframe_pics/pic_8.png)
+![image](wireframe_pics/pic_12.png)
 
 Good luck!
 
@@ -63,10 +59,11 @@ Before diving into coding the game, I created a mockup for the browser based gam
 ![image](wireframe_pics/pic_1.png)
 
 ![image](wireframe_pics/pic_2.png)
+	
 
 ![image](wireframe_pics/pic_3.png)
 
-
+When a user matches the same cards, the cards will stay facing upIf the match is correct, then a multiplication problem and an input to type the answer will appear. When the user finds all the matches then a winning message will appear. 
 
 ### 3. Pseudocode
 After creating my mockup, I began to pseudocode. The following is pseudocode that was written before building the game. Pseudocode allowed me to think through each step of building my game and think deeply how on how the user will be interacting with the game. It also reminded me of lesson planning when I was a teacher and thinking through from introducing to lesson to incorporating independent practice time for students. I followed this template to aid me in structuring an organized process.
@@ -165,19 +162,18 @@ After creating my mockup, I began to pseudocode. The following is pseudocode tha
 3. Mobile responsive design
 
 
-### 4. Reflection / Diffculties Faced
-Overall, I thoroughly enjoyed building my game. 
+### 4. Reflection / Difficulties Faced
+Overall, I thoroughly enjoyed building my game and learned a tremendous amount on JavaScript and building a browser based game. 
 
 Reflection
 - `Console.log` is my new BFF
 	- I have used `console.log` to help me debug and find errors. It is truly an amazing best friend who will have your back to help you find your mistake :)
 - Continuous journey of learning JavaScript
-	- JavaScript is incredibly powerful. While I was building my game I felt like I learned new things about JavaScript and its capabilities. I hope to continue to deepen my knowledge in JavaScript to unlock 
+	- JavaScript is incredibly powerful. While I was building my game I felt like I learned new things about JavaScript. I hope to continue to deepen my knowledge in JavaScript to unlock its capabilities.
 - Math + Coding = So Fun!!
 	- I love that I was able to combine my prior work experience (math teacher) with coding by sneaking in math problems in the game 😊
 - Various solutions 
-	- I love that there are variety of solutions to solving a coding problem. There are efficient and clean ways of writing code. Building my game has taught me to find a solution that works best for me and that I can understand. I will continue to work towards crafting a cleaner and more efficient code.
-
+	- I love that there are variety of solutions to solving a coding problem. There are efficient and clean ways of writing code. Building my game has taught me to find a solution that works best for me such as documentations and coding example references that I can understand. I will continue to work towards crafting a cleaner and more efficient code.
 
 Difficulties Faced
 The following are some challenges I encountered:
@@ -185,9 +181,9 @@ The following are some challenges I encountered:
 - Positioning Random Pictures
 	- This part was challenging for me.
 	- I used Fisher Yates Algorithm to help me randomly position my cards. Although it was challenging. I love this algorithm!
-- Locating 
+- Locating image source for the new array
 - Start small and then scale up
-	- I learned that I need to start small with 4 cards and make it work.
+	- I had a very ambitious goal of having 16 cards. I quickly learned that I need to start small with 4 cards and make everything work. Then, I can apply the same principles on a larger scale.
 
 ### 5. Contents of the Working Version
 The working version of the card matching game consists of the following:
