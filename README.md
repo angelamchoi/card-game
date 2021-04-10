@@ -10,13 +10,12 @@ As a former math teacher, I wanted to build an engaging and purposeful game to i
 
 ## 🎮Getting Started
 To play, access the browser based game here: 
-(https://angelamchoi.github.io/card-game/)
+https://angelamchoi.github.io/card-game/
 
-Match the same cards. When there is a correct match, the user will solve a multiplication problem and will receive extra points. Enjoy your daily dose of math😀
+Match the same cards. When there is a correct match, the user will solve a multiplication problem and will receive extra points. Enjoy your daily dose of math! Good luck!😀
 
 ![image](wireframe_pics/pic_12.png)
 
-Good luck!
 
 ## 💻Technologies Used
 The matching card game uses HTML, CSS and Javascript.
