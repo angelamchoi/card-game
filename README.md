@@ -2,11 +2,10 @@
 
 Matching card game is a browser based game with a multiplication twist. This browser based game was created for General Assembly's Software Engineering Immersive (SEI) Program.
 
+![image](wireframe_pics/pic_7.png)
+
 ## 💡Inspiration for the game
 As a former math teacher, I wanted to build an engaging and purposeful game to inspire students to practice their multiplication facts while having fun. 
-
-## 💻Technologies Used
-The matching card game uses HTML, CSS and Javascript.
 
 ## 🎮Getting Started
 To play, access the browser based game here: 
@@ -15,6 +14,9 @@ To play, access the browser based game here:
 Match the same cards. When there is a correct match, the user will solve a multiplication problem and will receive extra points. Enjoy your daily dose of math😀
 
 Good luck!
+
+## 💻Technologies Used
+The matching card game uses HTML, CSS and Javascript.
 
 ## 📓Next Steps 
 The follow are the next steps in improving the matching card game:
@@ -41,7 +43,7 @@ The objective of the project was to incorporate the fundamentals of HTML, CSS, a
 - Include win/loss logic and render win/loss messages in HTML. 
 - Include separate HTML, CSS & JavaScript files.
 - Have properly indented HTML, CSS & JavaScript. In addition, vertical whitespace needs to be consistent.
-- No remaining dead and/or commented out code (code that will never be called) .
+- No remaining dead and/or commented out code (code that will never be called).
 - Functions and variables that are named sensibly. 
 - Be coded in a consistent manner. 
 - Deploy your game online using GitHub Pages 
@@ -89,7 +91,7 @@ After creating my mockup, I began to pseudocode. The following is pseudocode tha
 
 **Functions**
 1) Shuffling Array
-- Use Fisher Yates Algorithm to iterator through cards array
+- Use Fisher-Yates shuffle Algorithm to iterate through cards array
 - Create a new array for shuffled array
 - Iterate each front card set the source attribute to the new array.
 
