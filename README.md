@@ -4,6 +4,10 @@ Matching card game is a browser based game with a multiplication twist. This bro
 
 ![image](wireframe_pics/pic_7.png)
 
+![image](wireframe_pics/pic_9.png)
+
+
+
 ## 💡Inspiration for the game
 As a former math teacher, I wanted to build an engaging and purposeful game to inspire students to practice their multiplication facts while having fun. 
 
@@ -12,6 +16,9 @@ To play, access the browser based game here:
 (https://angelamchoi.github.io/card-game/)
 
 Match the same cards. When there is a correct match, the user will solve a multiplication problem and will receive extra points. Enjoy your daily dose of math😀
+
+
+![image](wireframe_pics/pic_8.png)
 
 Good luck!
 
