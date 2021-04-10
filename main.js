@@ -33,6 +33,7 @@ let scoreBoard = document.querySelector(".score");
 let math = document.querySelectorAll(".mathProblems");
 let question = document.querySelector('#question');
 let answer = document.getElementById('answer');
+let overlay = document.getElementById("overlay");
 
 // EVENT LISTENERS
 btn.addEventListener('click', init);
@@ -146,7 +147,10 @@ function checkAnswer() {
 }
 
 function winningMsg(){
-    alert("Yay!")
+    scoreBoard.innerHTML= "YAY!!! YOU WIN!!";
+    scoreBoard.style.color = "yellow";
+    scoreBoard.style.fontSize = "100px";
+    overlay.style.display = "block";
 }
 
 function cardReset () {
