@@ -99,7 +99,7 @@ After creating my mockup, I began to pseudocode. The following is pseudocode tha
 - Create a new array for shuffled array
 - Iterate each front card set the source attribute to the new array.
 
-2️) Flip Event
+2️. Flip Event
 - When a user clicks on a card only 2 cards can be flipped at a time.
 - Disable from clicking on the same card twice (remove event listener)
 - Go through each card and if match is: 
@@ -165,7 +165,7 @@ After creating my mockup, I began to pseudocode. The following is pseudocode tha
 ### 4. Reflection / Difficulties Faced
 Overall, I thoroughly enjoyed building my game and learned a tremendous amount on JavaScript and building a browser based game. 
 
-Reflection
+**Reflection**
 - `Console.log` is my new BFF
 	- I have used `console.log` to help me debug and find errors. It is truly an amazing best friend who will have your back to help you find your mistake :)
 - Continuous journey of learning JavaScript
@@ -175,13 +175,12 @@ Reflection
 - Various solutions 
 	- I love that there are variety of solutions to solving a coding problem. There are efficient and clean ways of writing code. Building my game has taught me to find a solution that works best for me such as documentations and coding example references that I can understand. I will continue to work towards crafting a cleaner and more efficient code.
 
-Difficulties Faced
+**Difficulties Faced**
 The following are some challenges I encountered:
 
 - Positioning Random Pictures
 	- This part was challenging for me.
 	- I used Fisher Yates Algorithm to help me randomly position my cards. Although it was challenging. I love this algorithm!
-- Locating image source for the new array
 - Start small and then scale up
 	- I had a very ambitious goal of having 16 cards. I quickly learned that I need to start small with 4 cards and make everything work. Then, I can apply the same principles on a larger scale.
 
