@@ -1,6 +1,6 @@
 # 🃏Matching Card Game - General Assembly - SEI Project 1
 
-Matching card game is a browser based version with a mulitplication twist. This browser based game was created for General Assembly's Software Engineering Immersive (SEI) Program.
+Matching card game is a browser based version with a multiplication twist. This browser based game was created for General Assembly's Software Engineering Immersive (SEI) Program.
 
 ## 💡Inspiration for the game
 As a former math teacher, I wanted to build an engaging and purposeful game to inspire students to practice their multiplication facts while having fun. 
@@ -8,7 +8,7 @@ As a former math teacher, I wanted to build an engaging and purposeful game to i
 ## 💻Technologies Used
 The matching card game uses HTML, CSS and Javascript.
 
-## Getting Started
+## 🎮Getting Started
 To play, access the browser based game here: 
 (https://angelamchoi.github.io/card-game/)
 
@@ -24,7 +24,7 @@ The follow are the next steps in improving the matching card game:
 - Make it mobile responsive
 	
 ## Development Process
-To provide insight of how the browser based game was developed, this section will cover the following topics:
+The browser based game was developed, this section will cover the following topics:
 
 1. Project Requirements
 2. Wireframe
@@ -58,53 +58,100 @@ Before diving into coding the game, I created a mockup for the browser based gam
 
 
 ### 3. Pseudocode
-After creating a mockup, I began to pseudocode. The following is pseudocode that was written before building the game. Pseudocode allowed me to think through each step of building my game and think deeply how on how the user will be interacting with the game. It also reminded me of lesson planning when I was a teacher and thinking through from introducing to lesson to incorporating independent practice time for students. I followed this template to aid me in structuring an organized process.
+After creating my mockup, I began to pseudocode. The following is pseudocode that was written before building the game. Pseudocode allowed me to think through each step of building my game and think deeply how on how the user will be interacting with the game. It also reminded me of lesson planning when I was a teacher and thinking through from introducing to lesson to incorporating independent practice time for students. I followed this template to aid me in structuring an organized process.
 
 **Data Structure**
 - Card images  
 	- create an array of images
 	- when you click image url path shows
-- placeholder (baby yoda)
-- data structure
-	- player choice
-	- when click push an object and then clear
-	- matched! 
-		- update match property to true that way the card will always be flipped
+- player choice
 
-**Start Game/Reset Game**
-- display timer
-- display score = 0
-- display cards (not flipped)
-- when a user clicks on a card --> flip card for 2 seconds and then unflip
-- when user clicks on 2 cards and they are the same
-	- **correct** = go through each card and if match is correct then display multiplication problem && update score (increment by 1) && display picture
-	- **wrong**= then display message try again and score stays the same
+**Variables**
+- time
+- firstCardImg
+- secondCardImg
+- card count check
+- correct pair of cards
+- num 1 & num 2 (for multiplication game)
+- answer 
 
-**Math Problems**
-- when a user gets gets a matching set then display multiplication problem
-- user can press enter || click enter to submit answer
-- after user submits correct answer then question disappears 
-	- submit button
-- if answer is correct then update score 
-- use math.random to generate random multiplication problem
+**Event Handlers**
+1) Reset button 
+- When reset button is clicked, initalize the game.
 
+2) Cards clicked
+- For each card add a click event to flip card.
 
-**End Game**
-- if user doesn't have any matches game over && display 'try again'
-- if user finds all the matches then user wins && display winningMessage
-- clear user choices' array and the length is 2
+3) Inputting Answer
+- When user types in the answer for the multiplication question and presses enter, add event listener event for keyboard event.
 
-**Reset Game**
-- when reset button is click then 
-	- cards are blank
-	- shuffle cards into different location and display blank cards
-	- score is = 0
-	-  display timer (timer begins)
+**Functions**
+1) Shuffling Array
+- Use Fisher Yates Algorithm to iterator through cards array
+- Create a new array for shuffled array
+- Iterate each front card set the source attribute to the new array.
+
+2️) Flip Event
+- When a user clicks on a card only 2 cards can be flipped at a time.
+- Disable from clicking on the same card twice (remove event listener)
+- Go through each card and if match is: 
+	- 👍Correct
+		- Display multiplication problem 
+		-Update score (increment by 1)
+	- 👎Incorrect  
+		- No multiplication problem
+		- score stays the same
+
+3) Check for Match
+- Get firstCardImg source and secondCardImg source 
+- If firstCardImg source matches secondCardImg source then go to `function correct()`
+- If it firstCardImg source does not match secondCardImg then go to `function incorrect()`
+
+4) Correct
+- If match is correct
+	- Front cards will stay facing up 
+	- Update score board 
+	- Display math problem
+	- Go to flip event
+
+5) Incorrect
+- Cards will not stay facing up
+- User can try again
+- Go to flip event
+
+6) Math Problems
+- Generate 2 random numbers by using `Math.floor(Math.random()` and have them multiply each other
+- Display math problem and input section for answer
+- Use parseInt to convert it into an integer
+
+7) Check Keyboard Event
+- After user types the answer for the math question, then add event listener for enter key event
+
+8) Check Answer
+- If answer is correct then update score
+- Math question and input section disappears
+- If all 6 pairs of cards have been flipped then show winning message
+- Display math question and input section for answer
+-Use parseInt to convert into an integer
+
+9) Card Reset
+- When reset button is clicked, then loop through all cards and change their position to the original position
+- When firstCardImg and/or secondCardImg are/is clicked then flip card
+- Use event handler
+
+10) Init
+- Set matchedCards = false
+- cardCheck = 0
+- Shuffle cards into different positions
+- Go to card reset
+- score = 0
+- firstCardImg and secondCardImg haven't been clicked
+- Timer begins
 
 **Extras**
-1. timer (countdown timer)
-2. score
-3. mobile responsive design
+1. Timer (countdown timer)
+2. Score
+3. Mobile responsive design
 
 
 ### 4. Reflection / Diffculties Faced
@@ -121,7 +168,7 @@ Reflection
 	- I love that there are variety of solutions to solving a coding problem. There are efficient and clean ways of writing code. Building my game has taught me to find a solution that works best for me and that I can understand. I will continue to work towards crafting a cleaner and more efficient code.
 
 
-Difficulties faced
+Difficulties Faced
 - Positioning Random Pictures
 	- This part was challenging for me.
 	- I used Fisher Yates Algorithm to help me randomly position my cards. Although it was challenging. I love this algorithm!
@@ -131,7 +178,7 @@ Difficulties faced
 ### 5. Contents of the Working Version
 The working version of the card matching game consists of the following:
 
-index.html - The main page that users will interact with
+- index.html - The main page that users will interact with
 style.css - The style for the main page
-main.js - The code for the matching card game
-/pics - Folder containing the images used in the game
+- main.js - The code for the matching card game
+- /pics - Folder containing the images used in the game
