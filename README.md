@@ -12,17 +12,16 @@ As a former math teacher, I wanted to build an engaging and purposeful game to i
 To play, access the browser based game here: 
 (https://angelamchoi.github.io/card-game/)
 
-Match the same cards. When there is a correct match, the user will solve a multiplication problem and will receive extra points. Enjoy your daily dose of math😀
+Match the same cards. When there is a correct match, the user will solve a multiplication problem and will receive extra points. Enjoy your daily dose of math😀 Good luck!
 
 ![image](wireframe_pics/pic_12.png)
 
-Good luck!
 
 ## 💻Technologies Used
 The matching card game uses HTML, CSS and Javascript.
 
 ## 📓Next Steps 
-The follow are the next steps in improving the matching card game:
+The following are the next steps in improving the matching card game:
 
 - Allow players to save their progress when they return back to their game
 - Include different levels such as medium and difficult
@@ -57,16 +56,17 @@ Before diving into coding the game, I created a mockup for the browser based gam
  
 
 ![image](wireframe_pics/pic_1.png)
+		 
 
 ![image](wireframe_pics/pic_2.png)
-	
+	 
 
 ![image](wireframe_pics/pic_3.png)
 
-When a user matches the same cards, the cards will stay facing upIf the match is correct, then a multiplication problem and an input to type the answer will appear. When the user finds all the matches then a winning message will appear. 
+		When the user matches the same cards, the cards will stay facing up. If the match is correct, then a multiplication problem and an input to type the answer will appear. When the user finds all the matches then a winning message will appear. 
 
 ### 3. Pseudocode
-After creating my mockup, I began to pseudocode. The following is pseudocode that was written before building the game. Pseudocode allowed me to think through each step of building my game and think deeply how on how the user will be interacting with the game. It also reminded me of lesson planning when I was a teacher and thinking through from introducing to lesson to incorporating independent practice time for students. I followed this template to aid me in structuring an organized process.
+After creating my mockup, I began to pseudocode. The following is the pseudocode prior to developing the game. Pseudocoding allowed me to think through each step of building my game and think deeply on how the user will be interacting with the game. It also reminded me of lesson planning, when I was a teacher and thinking through all the steps from introducing to lesson to incorporating independent practice time for students. I followed this template to aid me in structuring an organized process.
 
 **Data Structure**
 - Card images  
@@ -85,30 +85,43 @@ After creating my mockup, I began to pseudocode. The following is pseudocode tha
 
 **Event Handlers**
 1) Reset button 
-- When reset button is clicked, initalize the game.
+- When reset button is clicked, initialize the game.
 
 2) Cards clicked
 - For each card add a click event to flip card.
 
 3) Inputting Answer
-- When user types in the answer for the multiplication question and presses enter, add event listener event for keyboard event.
+- When a user types in the answer for the multiplication question and presses enter, add event listener event for keyboard event.
 
 **Functions**
 1) Shuffling Array
 - Use Fisher-Yates shuffle Algorithm to iterate through cards array
+
+	`let arrayShuffle = function(arr) {
+  	let newPos;
+  	let temp;
+  	for (let i = array.length -1; i>0; i--) {
+    newPos = Math.floor(Math.random() * (i + 1));
+    temp = arr[i];
+    arr[i] = arr[newPos];
+    arr[newPos] = temp;
+  	}
+  	return arr;
+};`
+
 - Create a new array for shuffled array
-- Iterate each front card set the source attribute to the new array.
+- Iterate each front card set the source attribute to the new array
 
 2️. Flip Event
-- When a user clicks on a card only 2 cards can be flipped at a time.
+- When a user clicks on a card, only 2 cards can be flipped at a time
 - Disable from clicking on the same card twice (remove event listener)
 - Go through each card and if match is: 
 	- 👍Correct
 		- Display multiplication problem 
-		-Update score (increment by 1)
+		- Update score (increment by 1)
 	- 👎Incorrect  
 		- No multiplication problem
-		- score stays the same
+		- Score stays the same
 
 3) Check for Match
 - Get firstCardImg source and secondCardImg source 
@@ -130,7 +143,7 @@ After creating my mockup, I began to pseudocode. The following is pseudocode tha
 6) Math Problems
 - Generate 2 random numbers by using `Math.floor(Math.random()` and have them multiply each other
 - Display math problem and input section for answer
-- Use parseInt to convert it into an integer
+- Use `parseInt` to convert it into an integer
 
 7) Check Keyboard Event
 - After user types the answer for the math question, then add event listener for enter key event
@@ -140,7 +153,7 @@ After creating my mockup, I began to pseudocode. The following is pseudocode tha
 - Math question and input section disappears
 - If all 6 pairs of cards have been flipped then show winning message
 - Display math question and input section for answer
--Use parseInt to convert into an integer
+- Use `parseInt` to convert into an integer
 
 9) Card Reset
 - When reset button is clicked, then loop through all cards and change their position to the original position
@@ -149,10 +162,10 @@ After creating my mockup, I began to pseudocode. The following is pseudocode tha
 
 10) Init
 - Set matchedCards = false
-- cardCheck = 0
+- CardCheck = 0
 - Shuffle cards into different positions
 - Go to card reset
-- score = 0
+- Score = 0
 - firstCardImg and secondCardImg haven't been clicked
 - Timer begins
 
@@ -160,6 +173,7 @@ After creating my mockup, I began to pseudocode. The following is pseudocode tha
 1. Timer (countdown timer)
 2. Score
 3. Mobile responsive design
+4. Modal display for winning message
 
 
 ### 4. Reflection / Difficulties Faced
@@ -188,6 +202,6 @@ The following are some challenges I encountered:
 The working version of the card matching game consists of the following:
 
 - index.html - The main page that users will interact with
-style.css - The style for the main page
+- styles.css - The style for the main page
 - main.js - The code for the matching card game
 - /pics - Folder containing the images used in the game
