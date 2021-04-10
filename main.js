@@ -131,6 +131,7 @@ function checkKeyEvt(event){
     checkAnswer();
     } 
   }
+  
 //check answer
 function checkAnswer() {
   ans = parseInt(answer.value);
@@ -159,8 +160,6 @@ function cardReset () {
 function init () {
   matchedCards = false;
   setTimeout(shuffled, 2000);
-  //firstCardImg.style.transform = "rotateY(0deg)";
-  //secondCardImg.style.transform = "rotateY(0deg)";
   cardReset();
   cardCheck = 0;
   scoreBoard.innerHTML = 0;
