@@ -70,7 +70,6 @@ section {
 
 .card-front {
         transform: rotateY(180deg);
-        /* transition: transform 2s;   */
 }
 
 .placeholder {
@@ -121,4 +120,3 @@ input {
     visibility: hidden; 
     color: black;
 }
-
