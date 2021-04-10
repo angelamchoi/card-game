@@ -97,22 +97,22 @@ After creating my mockup, I began to pseudocode. Pseudocoding allowed me to thin
 1) Shuffling Array
 - Use Fisher-Yates shuffle Algorithm to iterate through cards array
 
-	`let arrayShuffle = function(arr) {
-  	let newPos;
-  	let temp;
-  	for (let i = array.length -1; i>0; i--) {
-    newPos = Math.floor(Math.random() * (i + 1));
-    temp = arr[i];
-    arr[i] = arr[newPos];
-    arr[newPos] = temp;
-  	}
-  	return arr;
-	};`
+		`let arrayShuffle = function(arr) {
+  		let newPos;
+  		let temp;
+  		for (let i = array.length -1; i>0; i--) {
+    	newPos = Math.floor(Math.random() * (i + 1));
+    	temp = arr[i];
+    	arr[i] = arr[newPos];
+    	arr[newPos] = temp;
+  		}
+  		return arr;
+		};`
 
 - Create a new array for shuffled array
-- Iterate each front card set the source attribute to the new array.
+- Iterate each front card and set the source attribute to the new array.
 
-2️) Flip Event
+2️. Flip Event
 - When a user clicks on a card only 2 cards can be flipped at a time.
 - Disable from clicking on the same card twice (remove event listener)
 - Go through each card and if match is: 
@@ -153,7 +153,7 @@ After creating my mockup, I began to pseudocode. Pseudocoding allowed me to thin
 - Math question and input section disappears
 - If all 6 pairs of cards have been flipped then show winning message
 - Display math question and input section for answer
--Use `parseInt` to convert into an integer
+- Use `parseInt` to convert into an integer
 
 9) Card Reset
 - When reset button is clicked, then loop through all cards and change their position to the original position
@@ -188,7 +188,7 @@ Overall, I thoroughly enjoyed building my game and learned a tremendous amount o
 	- I love that there are variety of solutions to solving a coding problem. There are efficient and clean ways of writing code. Building my game has taught me to find a solution that works best for me such as documentations and coding example references that I can easily understand. I will continue to work towards crafting a cleaner and more efficient code.
 
 **Difficulties Faced**
-The following are some challenges I encountered:
+- The following are some challenges I encountered:
 
 - Positioning Random Pictures
 	- This part was challenging for me. 
@@ -202,6 +202,6 @@ The following are some challenges I encountered:
 The working version of the card matching game consists of the following:
 
 - `index.html` - The main page that users will interact with
-style.css - The style for the main page
+- `style.css` - The style for the main page
 - `main.js` - The code for the matching card game
 - `/pics` - Folder containing the images used in the game
